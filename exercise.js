@@ -49,7 +49,7 @@ console.log(yoda);
 
 var waitList = ["Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro"];
 
-var nowServing = waitlist.shift();
+var nowServing = waitList.shift();
 console.log(nowServing);
 console.log(waitList);
 
