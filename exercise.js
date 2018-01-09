@@ -26,6 +26,9 @@ console.log(hof);
 
 var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut butter oreos", "fruit loops cereal"];
 
+shoppingList.push("Hendricks gin");
+console.log(shoppingList);
+
 
 
 
@@ -35,6 +38,9 @@ var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut 
 
 var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 
+yoda.reverse();
+console.log(yoda);
+
 
 
 /*The array.shift() removes the first element from an array and returns that element*/
@@ -43,11 +49,19 @@ var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 
 var waitList = ["Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro"];
 
+var nowServing = waitlist.shift();
+console.log(nowServing);
+console.log(waitList);
+
+
 
 
 /*The array.unshift() adds one or more elements to the front of an array and returns the new length of the array*/
 
 /*5. Apparently, you didn't do a good job with crowd control in the previous exercise. Kanye just cut in front of everyone!. Add Kanye to the waitList array above. Console.log waitList*/
+
+waitList.unshift("Kanye");
+console.log(waitlist);
 
 
 
@@ -57,6 +71,11 @@ array.splice(index, how many items to be removed)*/
 /*6. As head of McDonald's New Product Division, your job is to test and approve all new menu items. In the testMenu array below, all the items are approved except for "McLinguine" and "McChar-Siu Bau". Remove these items from the list and console.log the updated testMenu.*/
 
 var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau", "McChop-Chae", "McPancit"];
+
+testMenu.splice(2,2);
+console.log(testMenu);
+
+
 
 
 
@@ -71,6 +90,9 @@ var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau"
 var westSide = ["Dre", "2Pac", "Snoop"];
 var eastSide = ["Biggie", "Diddy", "Craig Mack"];
 
+var oneLove = westSide.concat(eastSide);
+console.log(oneLove);
+
 
 
 /*The array.join() joins all the elements of an array into a string.*/
@@ -78,6 +100,9 @@ var eastSide = ["Biggie", "Diddy", "Craig Mack"];
 /*8. Help Nike sell more overpriced sneakers by changing their slogan from an array into a string. Convert the shoe array and assign it to a variable named `shoeString`. Console.log this new variable.*/
 
 var shoe = ["just", "do", "it"];
+
+var shoeString = shoe.join();
+console.log(shoeString);
 
 
 
@@ -88,6 +113,9 @@ array.slice(index start, index end)*/
 "Yeezy", "Kimmy K" and "Lamar Odom". Unfriend these ungrateful people and assign them to a new variable named `unFriend`. Console.log this new variable.*/
 
 var fbFriends = ["Khalid", "Yeezy", "Kimmy K", "Lamar Odom", "Lebron", "Warren Buffet"];
+
+var unFriend = fbFriends.slice(1,4);
+console.log(unFriend);
 
 
 
